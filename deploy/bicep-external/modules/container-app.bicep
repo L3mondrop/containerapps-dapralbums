@@ -43,9 +43,9 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' ={
       }
     }
     template: {
-      "scale": {
-          "minReplicas": 1,
-          "maxReplicas": 2,
+      scale: {
+          minReplicas: 1
+          maxReplicas: 2
        }
       containers: [
         {
